@@ -1,9 +1,7 @@
-{{model.question}} by {{model.author}}
+{{model.question}}  {{model.author}}
 
 <ul>
-{{#each board.answers as |answer|}}
-<li>{{answer-tile answer=answer destroyAnswer="destroyAnswer"}}</li>
-{{/each}}
+  {{#each board.answers as |answer|}}
+  {{answer-tile answer=answer}}
+  {{/each}}
 </ul>
-
-<button {{action 'delete' board}}>Delete Question</button>

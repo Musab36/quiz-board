@@ -7,11 +7,12 @@ export default Ember.Route.extend({
             answers: this.store.findAll('answer')
         });
     },
-    actions: {
-        saveQuestion(params) {
-            var newQuiz = this.store.createRecord('question', params);
-            newQuiz.save();
-            this.transitionTo('index');
-        }
+  actions: {
+    saveQuestion(params) {
+      var newQuestion = this.store.createRecord('board', params);
+      newQuestion.save(); 
+      this.transitionTo('index');
     }
+    
+  }
 });
