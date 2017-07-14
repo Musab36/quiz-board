@@ -1,0 +1,19 @@
+<div class="container">
+{{#if formIsShown}}
+<form>
+    <div class="form-group">
+        <label for="user">Your Name</label>
+        {{input value=user id="user"}}
+    </div>
+
+    <div class="form-group">
+        <label for="content">Your Answer</label>
+        {{input value=content id="content"}}
+    </div>
+    <button {{action 'saveAnswer'}}>Submit</button>
+</form>
+{{else}}
+<button {{action 'newAnswer'}}>Answer</button>
+{{/if}}
+</div>
+

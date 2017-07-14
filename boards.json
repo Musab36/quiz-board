@@ -1,0 +1,30 @@
+{ "boards": [{
+    "question": "Which animal never drinks water in its entire life?",
+    "author": "Musab"
+},{
+    "question": "What is the physical phase of life called?",
+    "author": "Harun"
+},{
+    "question": "What is the name of the cells in the body that engulf foreign particles like bacteria?",
+    "author": "Ashley"
+},{
+    "question": "Which is the vertebrate that has two chambered heart?",
+    "author": "Sandule"
+},{
+    "question": "What is the name of that process in which oxygen is removed?",
+    "author": "Ilyas"
+},{
+    "question": "What is needed for rusting to occur?",
+    "author": "Yasmin"
+},{
+    "question": "Which acid is used in the body to help digestion?",
+    "author": "Tom"
+}],
+  "answers": [{
+    "user": "Elbas",
+    "content": "I don't know"
+  }, {
+    "user": "Jhon",
+    "content": "I'm not sure"
+  }]
+ }

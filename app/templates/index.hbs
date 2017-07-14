@@ -1,0 +1,8 @@
+<h1>Welcome to my-board</h1>
+
+<article class="listing">
+{{#each model.boards as |board|}}
+{{board-tile board=board}}
+{{/each}}
+</article>
+{{add-questions saveQuestion="saveQuestion"}}

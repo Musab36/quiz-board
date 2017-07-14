@@ -1,0 +1,8 @@
+<h2>Help answer the following question</h2>
+{{model.question}} - by {{model.author}}
+
+{{board-detail board=model}}
+
+{{user-answers saveAnswer="saveAnswer" board=model}}
+
+{{board-detail destroyQuestion="destroyQuestion" destroyAnswer="destroyAnswer" board=model}}
