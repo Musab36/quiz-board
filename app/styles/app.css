@@ -1,0 +1,59 @@
+button {
+    height: 40px;
+    width: 100px;
+    background-color: red;
+    color: white;
+    border: 2px solid red;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+button:hover {
+    background-color: white;
+    color: black;
+}
+h1 {
+    color: red;
+    font-family: monospace;
+}
+h3 {
+    color: blue;
+    font-family: cursive;
+}
+h4 {
+    color: orangered;
+    font-family: sans-serif;
+}
+.answers {
+    color: aqua;
+    font-weight: bolder;
+    margin-left: 50px;
+}
+footer {
+    font-size: 40px;
+    color: goldenrod;
+    font-weight: bolder;
+}
+.contact {
+    color: cyan;
+    font-weight: bolder;
+}
+.about {
+    color: chartreuse;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.glad {
+    color: yellow;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.us {
+    color: cyan;
+    font-weight: bolder;
+}
+body {
+    background-color: #333;
+}
+.questions {
+    margin-left: 50px;
+}

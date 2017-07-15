@@ -1,8 +1,8 @@
 <h1>Welcome to my question and answer board!</h1><br>
-<h2>Answer the following questions:</h2>
-<article class="listing">
+<h3>Answer the following questions:</h3>
+<ul class="questions">
 {{#each model.boards as |board|}}
-{{board-tile board=board}}
+<li>{{board-tile board=board}}</li>
 {{/each}}
-</article>
+</ul>
 {{add-questions saveQuestion="saveQuestion"}}

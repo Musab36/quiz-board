@@ -1,6 +1,7 @@
 {{model.question}}  {{model.author}}
 
-<ul>
+<ul class="answers">
+  <h1>All the answers</h1>
   {{#each board.answers as |answer|}}
   {{answer-tile answer=answer}}
   {{/each}}

@@ -1,10 +1,12 @@
-<h2>Help answer the following question</h2>
-<h3>{{model.question}} - by {{model.author}}:</h3>
+<h4>Be responsible when answering the question!</h4>
+<h3>The purpose of this questions is educational!</h3><br>
+
+<h4>Please help answer the following question:</h4>
+<h3>{{model.question}} - by {{model.author}}</h3>
 
 {{update-question board=model update="update"}}
 
-{{board-detail board=model}}
-
-{{user-answers board=model saveAnswer="saveAnswer"}}
+{{user-answers saveAnswer="saveAnswer" board=model}}
 
 {{board-detail board=model}}
+
