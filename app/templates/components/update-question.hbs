@@ -1,16 +1,19 @@
-{{#if updateQuiz}}
+{{#if updateQuizForm}}
+  <h4>Update {{board.question}} - by {{board.author}}</h4>
+  <div>
     <form>
-        <div class="form-group">
-        <label for="question">Edit Question</label>
-        {{input value=question id="question"}}
-        </div>
+      <div class="form-group">
+        <label for="author">Name</label>
+        {{input value=author id="author" placeholder=board.author}}
+      </div>
 
-        <div class="form-group">
-            <label for="author">Your Name</label>
-            {{input value=author id="author"}}
-        </div>
-        <button {{action 'update' board}}>Save</button>
+      <div class="form-group">
+        <label for="question">Question</label>
+        {{input value=question id="question" placeholder=board.question}}
+      </div>
+      <button {{action 'update' board}}>Save</button>
     </form>
+  </div>
 {{else}}
-<button {{action 'editQuiz'}}>Edit Question</button>
+  <button {{action 'updateQuizForm'}}>Update</button>
 {{/if}}
