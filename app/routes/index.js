@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  // We are sending multiple models as one promise using RSVP then, ember waits till the promise is fulfilled
     model() {
         return Ember.RSVP.hash({
             boards: this.store.findAll('board'),
@@ -10,7 +11,7 @@ export default Ember.Route.extend({
   actions: {
     saveQuestion(params) {
       var newQuestion = this.store.createRecord('board', params);
-      newQuestion.save(); 
+      newQuestion.save();
       this.transitionTo('index');
     }
   }
